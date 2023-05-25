@@ -1,0 +1,46 @@
+/* Default colors */
+:root {
+    --softBlack: rgb(52, 58, 64);
+    --plainGray: rgb(204, 204, 204);
+    --baige: rgb(235, 237, 240);
+}
+
+/* Styles for transparent button */
+.transparentButton {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(126, 126, 126); /* Text color for button */
+}
+
+/* Styles for button on hover or focus */
+.transparentButton:hover,
+.transparentButton:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Override default :active state styles */
+.transparentButton:active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color: rgb(126, 126, 126) !important; /* Reset text color to original */
+}
+
+/* The h1 text size */
+.transparentButton h1 {
+    font-size: 100%;
+}
+
+/* Text color change for h1 within button on hover or focus */
+.transparentButton:hover h1,
+.transparentButton:focus h1 {
+    color: rgb(255, 255, 255);
+}
+
+
+/* card div */
+.cardDiv  {
+    border: 1px solid rgba(52, 58, 64, 0.199); /* This line includes border-width, border-style, and border-color */
+}
+
